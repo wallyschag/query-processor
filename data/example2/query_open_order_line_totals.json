@@ -25,12 +25,12 @@
       },
       "left": {
         "op": "Scan",
-        "table": "orders.csv",
+        "table": "./data/example2/orders.csv",
         "as": "o"
       },
       "right": {
         "op": "Scan",
-        "table": "order_items.csv",
+        "table": "./data/example2/order_items.csv",
         "as": "i"
       }
     }

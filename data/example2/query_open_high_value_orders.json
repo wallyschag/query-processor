@@ -24,7 +24,7 @@
         },
         "input": {
           "op": "Scan",
-          "table": "orders.csv",
+          "table": "./data/example2/orders.csv",
           "as": "o"
         }
       }
