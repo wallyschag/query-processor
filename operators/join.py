@@ -22,12 +22,12 @@ class JoinOp(Operator):
         self.right_index = 0
 
     def next(self):
-        while self.left_row is not None:
-            while self.right_index < len(self.right_rows):
+        while self.left_row is not None: # Scan all left rows
+            while self.right_index < len(self.right_rows): #Scan all right rows for current left row (preloaded in mem)
                 rrow = self.right_rows[self.right_index]
                 self.right_index += 1
-                combined = {**self.left_row, **rrow}
-                if eval_expr(self.condition, combined):
+                combined = {**self.left_row, **rrow} # merge left and right row into one combined row
+                if eval_expr(self.condition, combined): # evaluate expression on combined row
                     return combined
             # reset right side for next left row
             self.right_index = 0
