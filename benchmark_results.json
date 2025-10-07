@@ -1,20 +1,20 @@
 {
   "data/example1/query_high_balance.json": {
-    "Hash Join": 0.03579139709472656,
-    "Hash Join + Optimization": 0.03100109100341797,
-    "Sort-Merge Join": 0.031845808029174805,
-    "Sort-Merge Join + Optimization": 0.033521413803100586
+    "Hash Join": 0.03229665756225586,
+    "Hash Join + Optimization": 0.03148984909057617,
+    "Sort-Merge Join": 0.031438589096069336,
+    "Sort-Merge Join + Optimization": 0.034852027893066406
   },
   "data/example2/query_open_order_line_totals.json": {
-    "Hash Join": 0.036330461502075195,
-    "Hash Join + Optimization": 0.03296017646789551,
-    "Sort-Merge Join": 0.03208041191101074,
-    "Sort-Merge Join + Optimization": 0.03374004364013672
+    "Hash Join": 0.0328364372253418,
+    "Hash Join + Optimization": 0.032958030700683594,
+    "Sort-Merge Join": 0.03298163414001465,
+    "Sort-Merge Join + Optimization": 0.03265237808227539
   },
   "data/example2/query_open_high_value_orders.json": {
-    "Hash Join": 0.035129547119140625,
-    "Hash Join + Optimization": 0.03426718711853027,
-    "Sort-Merge Join": 0.031599998474121094,
-    "Sort-Merge Join + Optimization": 0.032994985580444336
+    "Hash Join": 0.033120155334472656,
+    "Hash Join + Optimization": 0.034468889236450195,
+    "Sort-Merge Join": 0.033190011978149414,
+    "Sort-Merge Join + Optimization": 0.03214311599731445
   }
 }

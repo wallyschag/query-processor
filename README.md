@@ -17,14 +17,19 @@ Loads and sorts both input tables by their join keys, then sequentially scans th
 Traverses the query plan tree and moves filter conditions (Select operators) as close as possible to the data sources (Scan operators)
 
 ## How to run the system
-- All queries (.json files) and tables (.csv files) can be found in data/
+- All queries (`.json` files) and tables (`.csv` files) can be found in data/
 - There are two example folders (example1 and example2) which each contain different queries and table data
+- Set `CENGINE_OPTIMIZE=true/false to enable/disable` predicate pushdown Optimization
+- Set `CENGINE_JOIN_ALGO=nested_loop/hash/sort_merge` to enable nested loop joins, hash joins, or sort_merge joins
 
 ### Command Template
 `CENGINE_OPTIMIZE=[true/false] CENGINE_JOIN_ALGO=[nested_loop/hash/sort_merge] python3 query_processor.py /path/to/query.json`
 
 ### Example Command
 `CENGINE_OPTIMIZE=true CENGINE_JOIN_ALGO=hash python3 query_processor.py data/example2/query_open_order_line_totals.json`
+
+## Running the benchmarking script
+`python3 benchmark.py`
 
 ## AI usage notice
 - Since I had no idea where to start this project, I asked ChatGPT to generate a folder structure and some boilerplate code for this project. The ideas for the modular approach came from ChatGPT. I filled in the rest of the details.
