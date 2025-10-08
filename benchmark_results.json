@@ -1,20 +1,26 @@
 {
   "data/example1/query_high_balance.json": {
-    "Hash Join": 0.03229665756225586,
-    "Hash Join + Optimization": 0.03148984909057617,
-    "Sort-Merge Join": 0.031438589096069336,
-    "Sort-Merge Join + Optimization": 0.034852027893066406
+    "Nested Loop Join": 0.032727718353271484,
+    "Nested Loop Join + Optimization": 0.03246164321899414,
+    "Hash Join": 0.031502723693847656,
+    "Hash Join + Optimization": 0.03310441970825195,
+    "Sort-Merge Join": 0.032714128494262695,
+    "Sort-Merge Join + Optimization": 0.0321958065032959
   },
   "data/example2/query_open_order_line_totals.json": {
-    "Hash Join": 0.0328364372253418,
-    "Hash Join + Optimization": 0.032958030700683594,
-    "Sort-Merge Join": 0.03298163414001465,
-    "Sort-Merge Join + Optimization": 0.03265237808227539
+    "Nested Loop Join": 0.03181195259094238,
+    "Nested Loop Join + Optimization": 0.0314023494720459,
+    "Hash Join": 0.03204202651977539,
+    "Hash Join + Optimization": 0.03099226951599121,
+    "Sort-Merge Join": 0.03148221969604492,
+    "Sort-Merge Join + Optimization": 0.03194260597229004
   },
   "data/example2/query_open_high_value_orders.json": {
-    "Hash Join": 0.033120155334472656,
-    "Hash Join + Optimization": 0.034468889236450195,
-    "Sort-Merge Join": 0.033190011978149414,
-    "Sort-Merge Join + Optimization": 0.03214311599731445
+    "Nested Loop Join": 0.031339168548583984,
+    "Nested Loop Join + Optimization": 0.03425097465515137,
+    "Hash Join": 0.0325016975402832,
+    "Hash Join + Optimization": 0.04250621795654297,
+    "Sort-Merge Join": 0.032799720764160156,
+    "Sort-Merge Join + Optimization": 0.031813859939575195
   }
 }

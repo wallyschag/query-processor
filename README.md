@@ -32,4 +32,4 @@ Traverses the query plan tree and moves filter conditions (Select operators) as 
 `python3 benchmark.py`
 
 ## AI usage notice
-- Since I had no idea where to start this project, I asked ChatGPT to generate a folder structure and some boilerplate code for this project. The ideas for the modular approach came from ChatGPT. I filled in the rest of the details.
+- Since I had no idea where to start this project, I asked ChatGPT to generate a folder structure and some boilerplate code for this project. The ideas for the modular approach came from ChatGPT. I filled in the rest of the details I also had ChatGPT generate the benchmarking script, as well as generate most of the predicate pushown code.

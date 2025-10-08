@@ -10,6 +10,8 @@ queries = [
 ]
 
 configurations = [
+    {"name": "Nested Loop Join", "env": {"CENGINE_JOIN_ALGO": "nested_loop", "CENGINE_OPTIMIZE": "false"}},
+    {"name": "Nested Loop Join + Optimization", "env": {"CENGINE_JOIN_ALGO": "nested_loop", "CENGINE_OPTIMIZE": "true"}},
     {"name": "Hash Join", "env": {"CENGINE_JOIN_ALGO": "hash", "CENGINE_OPTIMIZE": "false"}},
     {"name": "Hash Join + Optimization", "env": {"CENGINE_JOIN_ALGO": "hash", "CENGINE_OPTIMIZE": "true"}},
     {"name": "Sort-Merge Join", "env": {"CENGINE_JOIN_ALGO": "sort_merge", "CENGINE_OPTIMIZE": "false"}},
